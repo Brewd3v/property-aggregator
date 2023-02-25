@@ -1,4 +1,12 @@
-import './globals.css'
+import "./globals.css";
+
+// Required Core Stylesheet
+import "@glidejs/glide/dist/css/glide.core.css";
+
+// Optional Theme Stylesheet
+import "@glidejs/glide/dist/css/glide.theme.css";
+
+
 
 export default function RootLayout({ children }) {
   return (
@@ -10,5 +18,5 @@ export default function RootLayout({ children }) {
       <head />
       <body>{children}</body>
     </html>
-  )
+  );
 }
