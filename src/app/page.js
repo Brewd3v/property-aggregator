@@ -26,19 +26,19 @@ export default async function Home() {
 }
 
 export const getRightmove = cache(async () => {
-  const res = await fetch("http://localhost:3000/api/rightmove");
+  const res = await fetch("/api/rightmove");
   const items = await res.json();
   return items;
 });
 
 export const getPedder = cache(async () => {
-  const res = await fetch("http://localhost:3000/api/pedder");
+  const res = await fetch("/api/pedder");
   const items = await res.json();
   return items;
 });
 
 export const getDexters = cache(async () => {
-  const res = await fetch("http://localhost:3000/api/dexters");
+  const res = await fetch("/api/dexters");
   const items = await res.json();
   return items;
 });
